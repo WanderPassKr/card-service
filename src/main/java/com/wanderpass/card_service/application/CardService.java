@@ -48,6 +48,6 @@ public class CardService {
             throw new InvalidCardStatusException("사용 불가능한 카드입니다.");
         }
 
-        return new GetCardCurrencyResponse(card.getId(), card.getCurrency(), card.getStatus());
+        return new GetCardCurrencyResponse(card.getId(), card.getMemberId(), card.getCurrency(), card.getStatus());
     }
 }
